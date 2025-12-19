@@ -10,11 +10,11 @@
 - Создан магический метод __str__
 
 ## Задание 3
-## - Созданы классы:
-  Truck
-  Train
-  TransportCompany
-- ##Созданы методы:
+- Созданы классы:
+--  Truck
+--  Train
+--  TransportCompany
+- Созданы методы:
   add_vehicle(vehicle)
   list_vehicles()
   add_client(client)
