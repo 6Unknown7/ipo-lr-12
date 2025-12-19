@@ -17,7 +17,6 @@ def main():
         print("4. Показать всех клиентов")
         print("5. Распределить грузы оптимально")
         print("6. Показать отчет о распределении")
-        print("7. Создать тестовые данные")
         print("0. Выход")
         
         # Получаем выбор пользователя
@@ -119,30 +118,6 @@ def main():
         elif choice == "6":
             # Показ отчета о распределении
             print(company.get_distribution_report())
-        
-        elif choice == "7":
-            # Создание тестовых данных для демонстрации
-            try:
-                # Добавляем тестовый транспорт
-                company.add_vehicle(Truck(10, "Красный"))
-                company.add_vehicle(Truck(15, "Синий"))
-                company.add_vehicle(Train(50, 10))
-                company.add_vehicle(Train(30, 5))
-                
-                # Добавляем тестовых клиентов
-                company.add_client(Client("Иванов Иван", 8, True))
-                company.add_client(Client("Петров Петр", 5))
-                company.add_client(Client("Сидоров Алексей", 12, True))
-                company.add_client(Client("Кузнецова Мария", 3))
-                company.add_client(Client("ООО 'Ромашка'", 20))
-                company.add_client(Client("VIP Корпорация", 7, True))
-                
-                print("Тестовые данные успешно созданы!")
-                print(f"Добавлено: {len(company.vehicles)} единиц транспорта")
-                print(f"Добавлено: {len(company.clients)} клиентов")
-                
-            except Exception as e:
-                print(f"Ошибка при создании тестовых данных: {e}")
         
         elif choice == "0":
             # Выход из программы
